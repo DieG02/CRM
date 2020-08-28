@@ -1,0 +1,88 @@
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: #dedede;
+    display: flex;
+}
+#home header{
+    background-color: white;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    padding: 0 2% 0 7%;
+    justify-content: space-between;
+    align-items: center;
+}
+#home header h1{
+    font-size: 27px;
+    color: #555;
+    margin-bottom: 0px;
+}
+#home header .search{
+    width: 40%;
+    height: 75%;
+    display: flex;
+}
+#home header .search button{
+    height: 75%;
+    width: 35px;
+    padding-top: 4px;
+    padding-left: 7px;
+    border-radius: 25px;
+    margin: auto 0px;
+    margin-right: 15px;
+}
+#home header .search > button:first-child{
+    padding-top: 4px;
+    padding-left: 4px;
+}
+#home header .search input{
+    border: none;
+    background-color: #eee;
+    width: 100%;
+    height: 75%;
+    border-radius: 25px;
+    font-size: 16px;
+    padding-left: 15px;
+    margin: auto 0px;
+}
+#home header .options{
+    height: 75%;
+    display: flex;
+}
+#home header .options button{
+    border: none;
+    width: 47px;
+    height: 100%;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+#home header .search button:last-child,
+#home header .options button:last-child{
+    margin-right: 0px;
+    margin-left: 5px;
+}
+#home header .options button:hover{
+    background-color: #dedede;
+}
+
+
+#home nav{
+    background-color: #0066ff;
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+#home nav a{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+}
+#home nav a:hover{
+    background-color: white;
+}

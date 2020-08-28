@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-export default function Home() {
+export default function Login() {
   
   return(
     <div id="login">
@@ -17,7 +17,7 @@ export default function Home() {
             <input className="form-control" type="password"/>
           </div>
         </div>
-        <button>Iniciar Sesión</button>
+        <button onClick={() => window.location.replace("/home")}>Iniciar Sesión</button>
         <p>accede rapidamente</p>
         <div className="nav">
           <button>Place</button>
