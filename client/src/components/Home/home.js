@@ -7,7 +7,7 @@ import {
   Preguntas, 
   Configuraciones,
 
-  Inicio,
+  Pizarra,
   Prospectos,
   Tratos,
   Contactos,
@@ -42,7 +42,7 @@ export default function Home() {
       <nav>
         <a href="home">LOGO</a>
         <a href="/home" onMouseOver={() => fillIn('homeIcon')} onMouseOut={() => fillOut('homeIcon')}>
-          <Inicio/>
+          <Pizarra/>
         </a>
         <a href="/leads" onMouseOver={() => fillIn('leadsIcon')} onMouseOut={() => fillOut('leadsIcon')}>
           <Prospectos/>

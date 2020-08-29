@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
-import usuario from './User.js'
+import web from './WebReducer.js'
+import usuario from './UserReducer.js';
 
 const mainReducer = combineReducers({
+    web,
     usuario,
 });
 
