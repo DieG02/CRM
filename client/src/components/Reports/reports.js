@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { homeView } from '../../actions/WebActions.js';
+import { reportsView } from '../../actions/WebActions.js';
 import "./style.css";
 
-function Home({ webRender, homeView }) { 
+function Reports({ webRender, reportsView }) {
+ 
   useEffect(() => {
-    homeView()
+    reportsView()
   }, [])
 
   return(
-    <div id="home">
-      <h1>Pantalla Home</h1>
+    <div id="reports">
+      <h1>Pantalla reports</h1>
     </div>
   )
 }
@@ -21,4 +22,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, { homeView })(Home);
+export default connect(mapStateToProps, { reportsView })(Reports);

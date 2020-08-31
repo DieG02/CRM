@@ -1,0 +1,106 @@
+#frame{
+    width: 100%;
+    height: 100vh;
+    background-color: #dedede;
+    display: flex;
+}
+#frame header{
+    background-color: white;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    padding: 0 2% 0 7%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+#frame header .title{
+  width: 15%;
+}
+#frame header h1{
+    font-size: 27px;
+    color: #555;
+    margin-bottom: 0px;
+}
+#frame header .search{
+    width: 40%;
+    height: 75%;
+    display: flex;
+}
+#frame header .search button{
+    height: 75%;
+    width: 35px;
+    padding-top: 4px;
+    padding-left: 7px;
+    border-radius: 25px;
+    margin: auto 0px;
+    margin-right: 15px;
+}
+#frame header .search > button:first-child{
+    padding-top: 4px;
+    padding-left: 4px;
+}
+#frame header .search input{
+    border: none;
+    background-color: #eee;
+    width: 100%;
+    height: 75%;
+    border-radius: 25px;
+    font-size: 16px;
+    padding-left: 15px;
+    margin: auto 0px;
+}
+#frame header .options{
+    height: 75%;
+    display: flex;
+}
+#frame header .options button{
+    border: none;
+    width: 47px;
+    height: 100%;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+#frame header .search button:last-child,
+#frame header .options button:last-child{
+    margin-right: 0px;
+    margin-left: 5px;
+}
+#frame header .options button:hover{
+    background-color: #dedede;
+}
+
+
+#frame nav{
+    background-color: #0066ff;
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+#frame nav a{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+}
+#frame nav a:hover{
+    background-color: white;
+}
+#frame nav .selected{
+  background-color: white;
+}
+#frame nav .selected svg path{
+  fill: #0066ff
+}
+#frame .component{
+  height: 90%;
+  width: 95%;
+  position: absolute;
+  top:10%;
+  left: 5%;
+}

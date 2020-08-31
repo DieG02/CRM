@@ -1,15 +1,20 @@
 import React from "react";
 import "./css/App.css";
-import { Route } from 'react-router-dom';
+import {  Switch, Route } from 'react-router-dom';
 import Login from "./components/Login/login.js";
-import Home from "./components/Home/home.js";
+import Frame from "./components/Frame/frame.js";
 
 function App() {
   return (
-    <div>
+    <Switch>
       <Route exact path="/login" component={ Login }/>
-      <Route exact path="/home" component={ Home }/>
-    </div>
+      <Route 
+        path="/:view" 
+        component={({ match }) => (
+          <Frame view={match.params.view} />
+        )}
+      />
+    </Switch>
   )
 }
 export default App;

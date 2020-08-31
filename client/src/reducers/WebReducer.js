@@ -11,7 +11,15 @@ import {
 const initialState = {
   webRender: {
     title: 'Home',
-    selected: 'home'
+    logo: {
+      home: 'selected',
+      leads: '',
+      deals: '',
+      contacts: '',
+      products: '',
+      documents: '',
+      reports: '',
+    }
   }
 };
 
@@ -22,50 +30,120 @@ export default function web(state = initialState, action) {
     case HOME_VIEW:
       return {
         ...state,
-        title: 'Home',
-        selected: 'home'
+        webRender: {
+          title: 'Home',
+          logo: {
+            home: 'selected',
+            leads: '',
+            deals: '',
+            contacts: '',
+            products: '',
+            documents: '',
+            reports: '',
+          }
+        }
       };
 
     case LEADS_VIEW:
       return {
         ...state,
-        title: 'Leads',
-        selected: 'lead'
+        webRender: {
+          title: 'Leads',
+          logo: {
+            home: '',
+            leads: 'selected',
+            deals: '',
+            contacts: '',
+            products: '',
+            documents: '',
+            reports: '',
+          }
+        }
       };
 
     case DEALS_VIEW:
       return {
         ...state,
-        title: 'Deals',
-        selected: 'deal'
+        webRender: {
+          title: 'Deals',
+          logo: {
+            home: '',
+            leads: '',
+            deals: 'selected',
+            contacts: '',
+            products: '',
+            documents: '',
+            reports: '',
+          }
+        }
       };
 
     case CONTACTS_VIEW:
       return {
         ...state,
-        title: 'Contacts',
-        selected: 'contact'
+        webRender: {
+          title: 'Contacts',
+          logo: {
+            home: '',
+            leads: '',
+            deals: '',
+            contacts: 'selected',
+            products: '',
+            documents: '',
+            reports: '',
+          }
+        }
       };
 
     case PRODUCTS_VIEW:
       return {
         ...state,
-        title: 'Products',
-        selected: 'product'
+        webRender: {
+          title: 'Products',
+          logo: {
+            home: '',
+            leads: '',
+            deals: '',
+            contacts: '',
+            products: 'selected',
+            documents: '',
+            reports: '',
+          }
+        }
       };
 
     case DOCUMENTS_VIEW:
       return {
         ...state,
-        title: 'Documents',
-        selected: 'document'
+        webRender: {
+          title: 'Documents',
+          logo: {
+            home: '',
+            leads: '',
+            deals: '',
+            contacts: '',
+            products: '',
+            documents: 'selected',
+            reports: '',
+          }
+        }
       };
 
     case REPORTS_VIEW:
       return {
         ...state,
-        title: 'Reports',
-        selected: 'report'
+        webRender: {
+          title: 'Reports',
+          logo: {
+            home: '',
+            leads: '',
+            deals: '',
+            contacts: '',
+            products: '',
+            documents: '',
+            reports: 'selected',
+          }
+        }
       };
 
     default:
